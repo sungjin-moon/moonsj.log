@@ -1,0 +1,16 @@
+[
+    {
+        "title": "My Project",
+        "slug": "project-1",
+        "url": "https://moonsj.me/",
+        "image": "./images/project1.png",
+        "description": "I built this to show off my sweet"
+    },
+    {
+        "title": "Another Project",
+        "slug": "project-2",
+        "url": "https://moonsj.me/",
+        "image": "./images/project2.png",
+        "description": "This one is also good."
+    }
+]
