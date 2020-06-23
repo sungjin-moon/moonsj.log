@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-function ProjectPage() {
+function ProjectsPage() {
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -37,12 +37,12 @@ function ProjectPage() {
           const { title, image } = project.node
           const imageSrc = image.childImageSharp.fluid.src
           return (
-            <ProjectView key={id}>
-              <Link to={`/project/${title}`}>
+            <ProjectsView key={id}>
+              <Link to={`/projects/${title}`}>
                 <div>{title}</div>
               </Link>
               <img src={imageSrc} alt="" />
-            </ProjectView>
+            </ProjectsView>
           )
         })}
       </View>
@@ -50,15 +50,15 @@ function ProjectPage() {
   )
 }
 
-ProjectPage.defaultProps = {}
+ProjectsPage.defaultProps = {}
 
-ProjectPage.propTypes = {}
+ProjectsPage.propTypes = {}
 
 const View = styled.div`
   display: flex;
 `
 
-const ProjectView = styled.div`
+const ProjectsView = styled.div`
   border: solid 1px;
   width: 300px;
   height: 200px;
@@ -68,4 +68,4 @@ const ProjectView = styled.div`
   }
 `
 
-export default ProjectPage
+export default ProjectsPage
