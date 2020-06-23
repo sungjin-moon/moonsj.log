@@ -23,6 +23,8 @@ const Header = () => {
     case "/contact":
       currentPath = "contact"
       break
+    default:
+      currentPath = null
   }
   return (
     <View>
@@ -49,10 +51,10 @@ const Header = () => {
 
 const View = styled.header`
   background-color: #0a71c6;
-  min-height: 52px;
+  min-height: 56px;
   display: flex;
   justify-content: flex-end;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
 `
 
 const Navigation = styled.nav`
@@ -64,8 +66,8 @@ const Navigation = styled.nav`
     font-weight: 500;
     text-decoration: none;
     outline: none;
-    margin-right: 40px;
-    padding: 0px 8px 0px 8px;
+    margin-right: 30px;
+    padding: 0px 8px;
     border-bottom: solid 3px #0a71c6;
   }
   .nav-${({ currentPath }) => currentPath} {
