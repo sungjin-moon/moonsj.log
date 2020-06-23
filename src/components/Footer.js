@@ -2,11 +2,13 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-const Footer = () => (
-  <View>
-    <Copyright>Copyright @ 2020 Portfolio.</Copyright>
-  </View>
-)
+function Footer() {
+  return (
+    <View>
+      <Copyright>Copyright @ 2020 Portfolio.</Copyright>
+    </View>
+  )
+}
 
 Footer.propTypes = {
   siteTitle: PropTypes.string,

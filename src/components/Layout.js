@@ -6,7 +6,7 @@ import "./Layout.css"
 import Header from "./Header"
 import Footer from "./Footer"
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Headline from "../components/Headline"
 
-const BlogPage = () => {
+function BlogPage() {
   return (
     <Layout>
-      <h1>Blog</h1>
+      <Headline>
+        <h1>Blog</h1>
+      </Headline>
     </Layout>
   )
 }

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { globalHistory } from "@reach/router"
 // import PropTypes from "prop-types"
 
-const Header = () => {
+function Header() {
   let currentPath = null
   const pathname = globalHistory.location.pathname
   switch (pathname) {

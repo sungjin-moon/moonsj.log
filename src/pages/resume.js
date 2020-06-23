@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Headline from "../components/Headline"
 
-const ResumePage = () => {
+function ResumePage() {
   return (
     <Layout>
-      <h1>Resume</h1>
+      <Headline>
+        <h1>Resume</h1>
+      </Headline>
     </Layout>
   )
 }

@@ -1,8 +1,9 @@
 import React from "react"
 // import PropTypes from 'prop-types'
 import styled from "styled-components"
-import Layout from "../components/Layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import Layout from "../components/Layout"
+import Headline from "../components/Headline"
 
 function ProjectsPage() {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,9 @@ function ProjectsPage() {
   console.log(projects)
   return (
     <Layout>
-      <h1>Projects</h1>
+      <Headline>
+        <h1>Projects</h1>
+      </Headline>
       <View>
         {projects.map((project, id) => {
           const { title, image } = project.node
