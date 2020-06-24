@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "./Layout.css"
@@ -20,7 +19,7 @@ function Layout({ children }) {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Main>{children}</Main>
+      {children}
       <Footer />
     </>
   )
@@ -29,9 +28,5 @@ function Layout({ children }) {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-const Main = styled.main`
-  min-height: calc((100vh - 56px) - 40px);
-`
 
 export default Layout
