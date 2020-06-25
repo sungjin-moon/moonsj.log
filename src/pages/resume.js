@@ -27,11 +27,11 @@ const View = styled.main`
   min-height: calc((100vh - 56px) - 40px);
   .headline {
     position: absolute;
-    padding: 40px 0px;
-    top: 0px;
+    top: -130px;
     left: 0px;
     width: 100%;
     z-index: 1;
+    height: 240px;
     .headline-container {
       max-width: 1000px;
       display: flex;
@@ -42,8 +42,8 @@ const View = styled.main`
   article {
     position: relative;
     z-index: 2;
-    padding-top: 180px;
-    padding-bottom: 100px;
+    margin-top: 130px;
+    margin-bottom: 100px;
     .resume {
       margin: 0 auto;
     }

@@ -1,9 +1,10 @@
 import React from "react"
 // import PropTypes from 'prop-types'
 import styled from "styled-components"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Headline from "../components/Headline"
+import ProjectCard from "../components/ProjectCard"
 
 function ProjectsPage() {
   const data = useStaticQuery(graphql`
@@ -32,22 +33,22 @@ function ProjectsPage() {
   console.log(projects)
   return (
     <Layout>
-      <Headline>
-        <h1>Projects</h1>
-      </Headline>
       <View>
-        {projects.map((project, id) => {
-          const { title, image } = project.node
-          const imageSrc = image.childImageSharp.fluid.src
-          return (
-            <ProjectsView key={id}>
-              <Link to={`/projects/${title}`}>
-                <div>{title}</div>
-              </Link>
-              <img src={imageSrc} alt="" />
-            </ProjectsView>
-          )
-        })}
+        <Headline>
+          <h1>Projects</h1>
+          <p>
+            In-depth Case Studies to show you what I can offer and how I work
+          </p>
+        </Headline>
+        <div className="projectList">
+          <section>
+            {projects.map((project, id) => {
+              const { title, image } = project.node
+              const imageSrc = image.childImageSharp.fluid.src
+              return <ProjectCard title={title} image={imageSrc} />
+            })}
+          </section>
+        </div>
       </View>
     </Layout>
   )
@@ -58,16 +59,21 @@ ProjectsPage.defaultProps = {}
 ProjectsPage.propTypes = {}
 
 const View = styled.div`
-  display: flex;
-`
-
-const ProjectsView = styled.div`
-  border: solid 1px;
-  width: 300px;
-  height: 200px;
-  img {
-    width: 100%;
-    height: 150px;
+  min-height: calc((100vh - 56px) - 40px);
+  .headline {
+    p {
+      margin-top: 12px;
+      font-size: 20px;
+    }
+  }
+  .projectList {
+    padding: 54px 0px;
+    section {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 `
 

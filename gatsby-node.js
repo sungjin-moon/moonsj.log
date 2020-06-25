@@ -30,7 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   
     projects.forEach(({ node: { title } }) => {
       actions.createPage({
-        path: `/project/${title}/`,
+        path: `/projects/${title}/`,
         component: require.resolve("./src/templates/project.js"),
         context: { title },
       })
