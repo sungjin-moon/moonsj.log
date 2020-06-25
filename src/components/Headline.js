@@ -17,7 +17,7 @@ Headline.propTypes = {}
 const View = styled.div`
   background-color: #41a4f5;
   color: #ffffff;
-  height: 240px;
+  padding: 40px 0px;
   .headline-container {
     max-width: 1140px;
     margin: 0 auto;

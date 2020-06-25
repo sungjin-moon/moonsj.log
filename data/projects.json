@@ -10,7 +10,21 @@
         "title": "Another Project",
         "slug": "project-2",
         "url": "https://moonsj.me/",
-        "image": "./images/project2.png",
+        "image": "./images/project1.png",
+        "description": "This one is also good."
+    },
+    {
+        "title": "Another Project",
+        "slug": "project-3",
+        "url": "https://moonsj.me/",
+        "image": "./images/project1.png",
+        "description": "This one is also good."
+    },
+    {
+        "title": "Another Project",
+        "slug": "project-4",
+        "url": "https://moonsj.me/",
+        "image": "./images/project1.png",
         "description": "This one is also good."
     }
 ]
