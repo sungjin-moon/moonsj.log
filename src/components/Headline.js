@@ -21,7 +21,6 @@ const View = styled.div`
   .headline-container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0px 20px;
   }
 `
 

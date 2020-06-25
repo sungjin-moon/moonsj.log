@@ -28,12 +28,13 @@ const View = styled.main`
   .headline {
     position: absolute;
     padding: 40px 0px;
-    top: 0px;
+    top: -130px;
     left: 0px;
     width: 100%;
     z-index: 1;
     .headline-container {
-      max-width: 1000px;
+      padding: 0px 20px;
+      max-width: 960px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -42,8 +43,8 @@ const View = styled.main`
   article {
     position: relative;
     z-index: 2;
-    padding-top: 180px;
-    padding-bottom: 100px;
+    margin-top: 130px;
+    margin-bottom: 100px;
     .resume {
       margin: 0 auto;
     }
