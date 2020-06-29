@@ -13,16 +13,10 @@ function ProjectsPage() {
         edges {
           node {
             title
-            slug
+            path
             url
-            description
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            type
+            skills
           }
         }
       }
@@ -32,7 +26,7 @@ function ProjectsPage() {
   const projects = data.allProjectsJson.edges
   console.log(projects)
   return (
-    <Layout>
+    <Layout currentPath="projects">
       <View>
         <Headline>
           <h1>Projects</h1>
@@ -43,9 +37,15 @@ function ProjectsPage() {
         <div className="projectList">
           <section>
             {projects.map((project, id) => {
-              const { title, image } = project.node
-              const imageSrc = image.childImageSharp.fluid.src
-              return <ProjectCard title={title} image={imageSrc} />
+              const { title, type, skills } = project.node
+              return (
+                <ProjectCard
+                  key={id}
+                  title={title}
+                  type={type}
+                  skills={skills}
+                />
+              )
             })}
           </section>
         </div>

@@ -4,7 +4,7 @@ import Headline from "../components/Headline"
 
 function IndexPage() {
   return (
-    <Layout>
+    <Layout currentPath="home">
       <Headline>
         <h1>Home</h1>
       </Headline>

@@ -8,7 +8,7 @@ import Resume from "../components/Resume"
 
 function ResumePage() {
   return (
-    <Layout>
+    <Layout currentPath="resume">
       <View className="resumePage">
         <Headline>
           <h1>Resume</h1>
