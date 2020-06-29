@@ -4,7 +4,7 @@ import Headline from "../components/Headline"
 
 function ContactPage() {
   return (
-    <Layout>
+    <Layout currentPath="contact">
       <Headline>
         <h1>Contact</h1>
       </Headline>

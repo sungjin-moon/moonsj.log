@@ -1,31 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { globalHistory } from "@reach/router"
-// import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 
-function Header() {
-  let currentPath = null
-  const pathname = globalHistory.location.pathname
-  switch (pathname) {
-    case "/":
-      currentPath = "home"
-      break
-    case "/resume":
-      currentPath = "resume"
-      break
-    case "/projects":
-      currentPath = "projects"
-      break
-    case "/blog":
-      currentPath = "blog"
-      break
-    case "/contact":
-      currentPath = "contact"
-      break
-    default:
-      currentPath = null
-  }
+function Header({ currentPath }) {
   return (
     <View>
       <Navigation currentPath={currentPath}>
@@ -47,6 +25,14 @@ function Header() {
       </Navigation>
     </View>
   )
+}
+
+Header.defaultProps = {
+  currentPath: "home",
+}
+
+Header.propTypes = {
+  currentPath: PropTypes.string
 }
 
 const View = styled.header`
