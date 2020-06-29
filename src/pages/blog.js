@@ -4,7 +4,7 @@ import Headline from "../components/Headline"
 
 function BlogPage() {
   return (
-    <Layout>
+    <Layout currentPath="blog">
       <Headline>
         <h1>Blog</h1>
       </Headline>

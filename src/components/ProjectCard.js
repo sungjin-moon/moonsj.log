@@ -1,10 +1,10 @@
 import React from "react"
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Tag from "../components/Tag"
 
-function ProjectCard({ title, image }) {
+function ProjectCard({ title, image, type, skills }) {
   return (
     <View>
       <div className={`project-${title} card`}>
@@ -16,27 +16,35 @@ function ProjectCard({ title, image }) {
             alt=""
           />
           <div className="background">
-            <span className="background-title">Budy</span>
+            <span className="background-title">{title}</span>
           </div>
         </div>
         <div className="card-body">
-          <Link to={`/projects/${title}`}>Web app Development</Link>
+          <Link to={`/projects/${title}`}>{type}</Link>
         </div>
         <div className="card-footer">
-          <Tag name="MySQL" />
-          <Tag name="Express.js" />
-          <Tag name="React.js" />
-          <Tag name="Node.js" />
-          <Tag name="Sequlize.js" />
+          {skills.map((name, id) => (
+            <Tag name={name} key={id} />
+          ))}
         </div>
       </div>
     </View>
   )
 }
 
-ProjectCard.defaultProps = {}
+ProjectCard.defaultProps = {
+  title: "",
+  image: "",
+  type: "",
+  skills: []
+}
 
-ProjectCard.propTypes = {}
+ProjectCard.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  type: PropTypes.string,
+  skills: PropTypes.array
+}
 
 const View = styled.div`
   width: 350px;

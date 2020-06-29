@@ -14,7 +14,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         allProjectsJson {
           edges {
             node {
-              slug
               title
             }
           }
