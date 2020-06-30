@@ -80,8 +80,12 @@ function project({ data }) {
       // performance,
     },
   } = project
-  const coverImage = project.coverImage.childImageSharp.fluid.src
-  const logoImage = project.logoImage.childImageSharp.fluid.src
+  const coverImage = project.coverImage
+    ? project.coverImage.childImageSharp.fluid.src
+    : ""
+  const logoImage = project.logoImage
+    ? project.logoImage.childImageSharp.fluid.src
+    : ""
 
   return (
     <Layout currentPath="projects">
