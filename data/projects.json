@@ -4,8 +4,8 @@
     "title": "Budy",
     "path": "projects",
     "url": "https://www.thebudy.com/",
-    "coverImage": "./images/Budy-cover.png",
-    "logoImage": "./images/gananetworks-logo.png",
+    "coverImage": "./images/Budy/budy-cover-desktop.png",
+    "logoImage": "./images/Budy/gananetworks-logo.png",
     "type": "Web app Development",
     "developPeriod": "2019-12 - 2020.03",
     "skills": ["MySQL", "Express.js", "React.js", "Node.js", "Sequelize.js"],
@@ -38,7 +38,7 @@
         ]
       },
       "architecture": {
-        "image": "./images/Budy-cover.png"
+        "image": "./images/Budy/budy-cover-desktop.png"
       },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -49,8 +49,8 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
       "performance": {
-        "desktop": "./images/Budy-cover.png",
-        "mobile": "./images/Budy-cover.png"
+        "desktop": "./images/Budy/budy-cover-desktop.png",
+        "mobile": "./images/Budy/budy-cover-mobile.png"
       }
     }
   },
@@ -59,8 +59,8 @@
     "title": "CheckCheck",
     "path": "projects",
     "url": "https://moonsj.me/",
-    "coverImage": "./images/Budy-cover.png",
-    "logoImage": "./images/gananetworks-logo.png",
+    "coverImage": "./images/CheckCheck/CheckCheck-cover-desktop.png",
+    "logoImage": "./images/codestates-logo.png",
     "type": "Web app Development",
     "developPeriod": "2019-12 - 2020.03",
     "skills": ["MySQL", "Express.js", "React.js", "Node.js", "Sequelize.js"],
@@ -93,7 +93,7 @@
         ]
       },
       "architecture": {
-        "image": "./images/Budy-cover.png"
+        "image": "./images/CheckCheck/CheckCheck-cover-desktop.png"
       },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -104,8 +104,8 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
       "performance": {
-        "desktop": "./images/Budy-cover.png",
-        "mobile": "./images/gananetworks-logo.png"
+        "desktop": "./images/CheckCheck/CheckCheck-cover-desktop.png",
+        "mobile": "./images/CheckCheck/CheckCheck-cover-mobile.png"
       }
     }
   },
@@ -114,8 +114,8 @@
     "title": "ChatterBox",
     "path": "projects",
     "url": "https://moonsj.me/",
-    "coverImage": "./images/Budy-cover.png",
-    "logoImage": "./images/gananetworks-logo.png",
+    "coverImage": "./images/ChatterBox/chatterbox-cover-desktop.png",
+    "logoImage": "./images/codestates-logo.png",
     "type": "Web app Development",
     "developPeriod": "2019-12 - 2020.03",
     "skills": ["MySQL", "Express.js", "React.js", "Node.js", "Sequelize.js"],
@@ -148,7 +148,7 @@
         ]
       },
       "architecture": {
-        "image": "./images/Budy-cover.png"
+        "image": "./images/ChatterBox/chatterbox-cover-desktop.png"
       },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -159,8 +159,8 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
       "performance": {
-        "desktop": "./images/Budy-cover.png",
-        "mobile": "./images/gananetworks-logo.png"
+        "desktop": "./images/ChatterBox/chatterbox-cover-desktop.png",
+        "mobile": "./images/ChatterBox/chatterbox-cover-desktop.png"
       }
     }
   },
@@ -169,8 +169,8 @@
     "title": "Lay",
     "path": "projects",
     "url": "https://moonsj.me/",
-    "coverImage": "./images/Budy-cover.png",
-    "logoImage": "./images/gananetworks-logo.png",
+    "coverImage": "./images/Lay/lay-cover-2.jpg",
+    "logoImage": null,
     "type": "Mobile app Development",
     "developPeriod": "2019-12 - 2020.03",
     "skills": ["React Native", "Expo"],
@@ -214,7 +214,6 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
       "performance": {
-        "desktop": "./images/Budy-cover.png",
         "mobile": "./images/gananetworks-logo.png"
       }
     }
