@@ -5,20 +5,35 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Headline from "../components/Headline"
 import SkillBox from "../components/SkillBox"
+import Desktop from "../components/Desktop"
+import Mobile from "../components/Mobile"
 
 export const query = graphql`
   query($title: String!) {
     projectsJson(title: { eq: $title }) {
       title
       type
+      position
+      projectType
+      developPeriod
+      company
       description {
         title
         text
       }
       coverImage {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+        desktop {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        mobile {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -72,37 +87,51 @@ function project({ data }) {
   const {
     title,
     type,
+    position,
+    projectType,
+    developPeriod,
     description,
+    company,
     detail: {
       technologiesUsed: { backend, frontend, others },
-      // architecture,
       achievements,
-      // performance,
+      architecture,
+      performance,
     },
   } = project
-  const coverImage = project.coverImage
-    ? project.coverImage.childImageSharp.fluid.src
+
+  const coverImage = project.coverImage.desktop
+    ? project.coverImage.desktop.childImageSharp.fluid.src
     : ""
+
   const logoImage = project.logoImage
     ? project.logoImage.childImageSharp.fluid.src
     : ""
 
+  const architectureImage = architecture.image.childImageSharp.fluid.src
+
+  const performanceDesktopImg = performance.desktop.childImageSharp.fluid.src
+  const performanceMobileImg = performance.mobile.childImageSharp.fluid.src
+
   return (
     <Layout currentPath="projects">
-      <View>
+      <View type={type} title={title}>
         <Headline>
           <div className="headline-left">
             <h1>{title}</h1>
             <h3>{type}</h3>
-            <h3>Frontend Developer</h3>
-            <h3>2019.12 - 2020.03</h3>
+            <h3>{position}</h3>
+            <h3>{projectType}</h3>
+            <h3>{developPeriod}</h3>
           </div>
-          <div className="headline-right">
-            <div className="headline-right-logo">
-              <img src={logoImage} alt="" />
-              <h2>Gana Networks</h2>
+          {title === "Lay" ? null : (
+            <div className="headline-right">
+              <div className="headline-right-logo">
+                <img src={logoImage} alt="" />
+                <h2>{company}</h2>
+              </div>
             </div>
-          </div>
+          )}
         </Headline>
         <section className="section-1">
           <div className="section-1-container inner">
@@ -119,30 +148,42 @@ function project({ data }) {
             <h2>Technologies Used</h2>
             <div className="section-2-container-skills">
               <SkillBox type="frontend" skills={frontend} />
-              <SkillBox type="backend" skills={backend} />
+              {title === "Lay" ? null : (
+                <SkillBox type="backend" skills={backend} />
+              )}
               <SkillBox type="tools" skills={others} />
             </div>
           </div>
         </section>
         <section className="section-3">
           <div className="section-3-container inner">
-            <h2>Architecture</h2>
-            <div className="section-3-container-architecture"></div>
-          </div>
-        </section>
-        <section className="section-4">
-          <div className="section-4-container inner">
             <h2>Achievements</h2>
-            <ul className="section-4-container-achievements">
+            <ul className="section-3-container-achievements">
               {achievements.map((item, id) => (
                 <li key={id}>{item}</li>
               ))}
             </ul>
           </div>
         </section>
+        {title === "Lay" ? null : (
+          <section className="section-4">
+            <div className="section-4-container inner">
+              <h2>Architecture</h2>
+              <div className="section-4-container-architecture">
+                <img src={architectureImage} alt="" />
+              </div>
+            </div>
+          </section>
+        )}
         <section className="section-5">
           <div className="section-5-container inner">
             <h2>Performance</h2>
+            <div className="section-5-container-performance">
+              {type === "Web app Development" && (
+                <Desktop innerImg={performanceDesktopImg} />
+              )}
+              <Mobile innerImg={performanceMobileImg} />
+            </div>
           </div>
         </section>
       </View>
@@ -199,8 +240,9 @@ const View = styled.div`
         }
       }
       img {
-        width: 500px;
+        max-width: 500px;
         height: 300px;
+        border: solid 1px;
       }
     }
   }
@@ -208,6 +250,7 @@ const View = styled.div`
     .section-2-container {
       .section-2-container-skills {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin-top: 80px;
       }
@@ -216,22 +259,32 @@ const View = styled.div`
   .section-3 {
     background-color: #ffffff;
     .section-3-container {
-      .section-3-container-architecture {
-        border: solid 1px;
-        height: 400px;
-      }
-    }
-  }
-  .section-4 {
-    .section-4-container {
-      .section-4-container-achievements {
+      .section-3-container-achievements {
         line-height: 2;
         margin: 0px;
       }
     }
   }
+  .section-4 {
+    .section-4-container {
+      .section-4-container-architecture {
+        text-align: center;
+        img {
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+      }
+    }
+  }
   .section-5 {
-    background-color: #ffffff;
+    background-color: ${({ title }) =>
+      title === "Lay" ? "#F7F8FA" : "#ffffff"};
+    .section-5-container {
+      .section-5-container-performance {
+        display: flex;
+        justify-content: ${({ type }) =>
+          type === "Web app Development" ? "space-between" : "center"};
+      }
+    }
   }
 `
 
