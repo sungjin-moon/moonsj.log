@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Tag from "../components/Tag"
@@ -9,15 +9,10 @@ function ProjectCard({ title, image, type, skills }) {
     <View>
       <div className={`project-${title} card`}>
         <div className="card-cover">
-          <img
-            src={
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwu8GmuI6m8blUhwSGHQjcej7VzvQaUyxq6vrOGl7aIoNO8iq-jNpuriOEwlSycTlLAzcVIw&usqp=CAU"
-            }
-            alt=""
-          />
-          <div className="background">
+          <img src={image} alt="" />
+          <Link className="background" to={`/projects/${title}`}>
             <span className="background-title">{title}</span>
-          </div>
+          </Link>
         </div>
         <div className="card-body">
           <Link to={`/projects/${title}`}>{type}</Link>
@@ -36,14 +31,14 @@ ProjectCard.defaultProps = {
   title: "",
   image: "",
   type: "",
-  skills: []
+  skills: [],
 }
 
 ProjectCard.propTypes = {
   title: PropTypes.string,
   image: PropTypes.string,
   type: PropTypes.string,
-  skills: PropTypes.array
+  skills: PropTypes.array,
 }
 
 const View = styled.div`
@@ -71,6 +66,12 @@ const View = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        outline: none;
+        text-decoration: none;
+        cursor: pointer;
+        :hover {
+          background-color: rgba(67, 78, 94, 0.7);
+        }
         .background-title {
           font-size: 40px;
           font-weight: 800;
@@ -94,6 +95,7 @@ const View = styled.div`
     }
     .card-footer {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       padding: 0px 20px 20px 20px;
       span {
