@@ -17,6 +17,15 @@ function ProjectsPage() {
             url
             type
             skills
+            coverImage {
+              main {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -37,13 +46,15 @@ function ProjectsPage() {
         <div className="projectList">
           <section>
             {projects.map((project, id) => {
-              const { title, type, skills } = project.node
+              const { title, type, skills, coverImage } = project.node
+              const image = coverImage.main.childImageSharp.fluid.src
               return (
                 <ProjectCard
                   key={id}
                   title={title}
                   type={type}
                   skills={skills}
+                  image={image}
                 />
               )
             })}

@@ -4,11 +4,18 @@
     "title": "Budy",
     "path": "projects",
     "url": "https://www.thebudy.com/",
-    "coverImage": "./images/Budy/budy-cover-desktop.png",
+    "coverImage": {
+      "main": "./images/Budy/budy-cover-desktop.png",
+      "desktop": "./images/Budy/budy-cover-desktop.png",
+      "mobile": "./images/Budy/budy-cover-mobile.png"
+    },
     "logoImage": "./images/Budy/gananetworks-logo.png",
     "type": "Web app Development",
-    "developPeriod": "2019-12 - 2020.03",
-    "skills": ["MySQL", "Express.js", "React.js", "Node.js", "Sequelize.js"],
+    "position": "Frontend Developer",
+    "projectType": "Team Project",
+    "developPeriod": "2019.12 - 2020.03",
+    "company": "Gana Networks",
+    "skills": ["React.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
       "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
       "text": "현재 카나비스는 북미를 비롯해서 몇몇 유럽 국가들의 합법화가 빠르게 진행중입니다. 이렇게 활발해진 카나비스 시장에서 단순 기호용 뿐만 아니라 화장품, 식품, 의료, 제약, 반려동물 등 수많은 산업들과 정보들이 증가하게 되었습니다. 이에 따라, 버디는 사용자들이 올바르고 유용한 정보들을 쉽게 습득할 수 있도록 서로의 정보를 공유할 수 있는 커뮤니티 서비스를 개발하게 되었고, 프론트엔드 개발자로 참여하게 되었습니다."
@@ -19,14 +26,14 @@
           "React.js (Hooks + Context)",
           "AWS (S3, ACM, Cloud Front, Route53)",
           "Webpack/Babel",
-          "HTML/CSS/Styled Component",
+          "HTML5/CSS3/Styled Component",
           "Quill (WYSIWYG Editor)"
         ],
         "backend": [
-          "Express.js",
+          "Express.js/Sequelize.js",
           "AWS (EC2, ACM, Cloud Front, Route53)",
           "AWS (RDS, Lambda, S3)",
-          "MySQL/Sequlize",
+          "MySQL",
           "Swagger"
         ],
         "others": [
@@ -37,9 +44,6 @@
           "Google Calendar"
         ]
       },
-      "architecture": {
-        "image": "./images/Budy/budy-cover-desktop.png"
-      },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -48,6 +52,9 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
+      "architecture": {
+        "image": "./images/Budy/budy-architecture.png"
+      },
       "performance": {
         "desktop": "./images/Budy/budy-cover-desktop.png",
         "mobile": "./images/Budy/budy-cover-mobile.png"
@@ -59,11 +66,18 @@
     "title": "CheckCheck",
     "path": "projects",
     "url": "https://moonsj.me/",
-    "coverImage": "./images/CheckCheck/CheckCheck-cover-desktop.png",
+    "coverImage": {
+      "main": "./images/CheckCheck/CheckCheck-cover-desktop.png",
+      "desktop": "./images/CheckCheck/CheckCheck-cover-desktop.png",
+      "mobile": "./images/CheckCheck/CheckCheck-cover-mobile.png"
+    },
     "logoImage": "./images/codestates-logo.png",
     "type": "Web app Development",
+    "position": "Frontend Developer",
+    "projectType": "Team Project",
     "developPeriod": "2019-12 - 2020.03",
-    "skills": ["MySQL", "Express.js", "React.js", "Node.js", "Sequelize.js"],
+    "company": "Code States",
+    "skills": ["Next.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
       "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
       "text": "현재 카나비스는 북미를 비롯해서 몇몇 유럽 국가들의 합법화가 빠르게 진행중입니다. 이렇게 활발해진 카나비스 시장에서 단순 기호용 뿐만 아니라 화장품, 식품, 의료, 제약, 반려동물 등 수많은 산업들과 정보들이 증가하게 되었습니다. 이에 따라, 버디는 사용자들이 올바르고 유용한 정보들을 쉽게 습득할 수 있도록 서로의 정보를 공유할 수 있는 커뮤니티 서비스를 개발하게 되었고, 프론트엔드 개발자로 참여하게 되었습니다."
@@ -71,29 +85,25 @@
     "detail": {
       "technologiesUsed": {
         "frontend": [
-          "React.js (Hooks + Context)",
-          "AWS (S3, ACM, Cloud Front, Route53)",
-          "Webpack/Babel",
-          "HTML/CSS/Styled Component",
-          "Quill (WYSIWYG Editor)"
+          "Next.js/React.js",
+          "AWS (EC2)",
+          "HTML5/CSS3",
+          "Jenkins"
         ],
         "backend": [
-          "Express.js",
-          "AWS (EC2, ACM, Cloud Front, Route53)",
-          "AWS (RDS, Lambda, S3)",
-          "MySQL/Sequlize",
-          "Swagger"
+          "Express.js/Sequelize.js",
+          "AWS (EC2, Lambda, Cloud Watch)",
+          "Python",
+          "NAVER API",
+          "MySQL"
         ],
         "others": [
           "Javascript/Node.js",
           "Git/Github",
           "ESLint/Prettier",
-          "Zeplin/Notion",
-          "Google Calendar"
+          "Adobe XD",
+          "Trello/Slack"
         ]
-      },
-      "architecture": {
-        "image": "./images/CheckCheck/CheckCheck-cover-desktop.png"
       },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -103,6 +113,9 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
+      "architecture": {
+        "image": "./images/CheckCheck/CheckCheck-architecture.png"
+      },
       "performance": {
         "desktop": "./images/CheckCheck/CheckCheck-cover-desktop.png",
         "mobile": "./images/CheckCheck/CheckCheck-cover-mobile.png"
@@ -114,11 +127,18 @@
     "title": "ChatterBox",
     "path": "projects",
     "url": "https://moonsj.me/",
-    "coverImage": "./images/ChatterBox/chatterbox-cover-desktop.png",
+    "coverImage": {
+      "main": "./images/ChatterBox/chatterbox-cover-desktop.png",
+      "desktop": "./images/ChatterBox/chatterbox-cover-desktop.png",
+      "mobile": "./images/ChatterBox/chatterbox-cover-desktop.png"
+    },
     "logoImage": "./images/codestates-logo.png",
     "type": "Web app Development",
-    "developPeriod": "2019-12 - 2020.03",
-    "skills": ["MySQL", "Express.js", "React.js", "Node.js", "Sequelize.js"],
+    "position": "Frontend, Backend Developer",
+    "projectType": "Personal Project",
+    "developPeriod": "2018.12 - 2019.01",
+    "company": "Code States",
+    "skills": ["React.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
       "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
       "text": "현재 카나비스는 북미를 비롯해서 몇몇 유럽 국가들의 합법화가 빠르게 진행중입니다. 이렇게 활발해진 카나비스 시장에서 단순 기호용 뿐만 아니라 화장품, 식품, 의료, 제약, 반려동물 등 수많은 산업들과 정보들이 증가하게 되었습니다. 이에 따라, 버디는 사용자들이 올바르고 유용한 정보들을 쉽게 습득할 수 있도록 서로의 정보를 공유할 수 있는 커뮤니티 서비스를 개발하게 되었고, 프론트엔드 개발자로 참여하게 되었습니다."
@@ -126,29 +146,23 @@
     "detail": {
       "technologiesUsed": {
         "frontend": [
-          "React.js (Hooks + Context)",
-          "AWS (S3, ACM, Cloud Front, Route53)",
-          "Webpack/Babel",
-          "HTML/CSS/Styled Component",
-          "Quill (WYSIWYG Editor)"
+          "React.js",
+          "AWS (S3)",
+          "HTML5/CSS3",
+          "Websocket"
         ],
         "backend": [
-          "Express.js",
-          "AWS (EC2, ACM, Cloud Front, Route53)",
-          "AWS (RDS, Lambda, S3)",
-          "MySQL/Sequlize",
-          "Swagger"
+          "Express.js/Sequelize.js",
+          "AWS (EC2)",
+          "MySQL",
+          "Websocket"
         ],
         "others": [
           "Javascript/Node.js",
           "Git/Github",
           "ESLint/Prettier",
-          "Zeplin/Notion",
-          "Google Calendar"
+          "AdobeXD"
         ]
-      },
-      "architecture": {
-        "image": "./images/ChatterBox/chatterbox-cover-desktop.png"
       },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -158,6 +172,9 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
+      "architecture": {
+        "image": "./images/ChatterBox/chatterbox-architecture.png"
+      },
       "performance": {
         "desktop": "./images/ChatterBox/chatterbox-cover-desktop.png",
         "mobile": "./images/ChatterBox/chatterbox-cover-desktop.png"
@@ -169,10 +186,17 @@
     "title": "Lay",
     "path": "projects",
     "url": "https://moonsj.me/",
-    "coverImage": "./images/Lay/lay-cover-2.jpg",
+    "coverImage": {
+      "main": "./images/Lay/lay-cover-3.png",
+      "desktop": null,
+      "mobile": "./images/Lay/lay-cover-2.jpg"
+    },
     "logoImage": null,
     "type": "Mobile app Development",
-    "developPeriod": "2019-12 - 2020.03",
+    "position": "Frontend Developer",
+    "projectType": "Personal Project",
+    "developPeriod": "2019.03.14 - 2020.03.21",
+    "company": "",
     "skills": ["React Native", "Expo"],
     "description": {
       "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
@@ -181,29 +205,16 @@
     "detail": {
       "technologiesUsed": {
         "frontend": [
-          "React.js (Hooks + Context)",
-          "AWS (S3, ACM, Cloud Front, Route53)",
-          "Webpack/Babel",
-          "HTML/CSS/Styled Component",
-          "Quill (WYSIWYG Editor)"
+          "React Native",
+          "Expo"
         ],
-        "backend": [
-          "Express.js",
-          "AWS (EC2, ACM, Cloud Front, Route53)",
-          "AWS (RDS, Lambda, S3)",
-          "MySQL/Sequlize",
-          "Swagger"
-        ],
+        "backend": [],
         "others": [
           "Javascript/Node.js",
           "Git/Github",
           "ESLint/Prettier",
-          "Zeplin/Notion",
-          "Google Calendar"
+          "AdobeXD"
         ]
-      },
-      "architecture": {
-        "image": "./images/Budy-cover.png"
       },
       "achievements": [
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
@@ -213,8 +224,12 @@
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
         "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
       ],
+      "architecture": {
+        "image": "./images/ChatterBox/chatterbox-architecture.png"
+      },
       "performance": {
-        "mobile": "./images/gananetworks-logo.png"
+        "desktop": "./images/Lay/lay-cover-3.png",
+        "mobile": "./images/Lay/lay-cover-2.jpg"
       }
     }
   }

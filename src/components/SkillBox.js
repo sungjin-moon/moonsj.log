@@ -79,7 +79,7 @@ const View = styled.div`
     padding: 60px 20px 20px 20px;
     min-width: 310px;
     max-width: 310px;
-    min-height: 160px;
+    min-height: 180px;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     h3 {
       text-align: center;
