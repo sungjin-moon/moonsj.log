@@ -240,6 +240,7 @@ const View = styled.div`
         }
       }
       img {
+        min-width: 500px;
         max-width: 500px;
         height: 300px;
         border: solid 1px;

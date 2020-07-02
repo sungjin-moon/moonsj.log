@@ -7,6 +7,7 @@ function BlogPage() {
     <Layout currentPath="blog">
       <Headline>
         <h1>Blog</h1>
+        <h3>페이지 준비중입니다.</h3>
       </Headline>
     </Layout>
   )

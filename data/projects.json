@@ -188,7 +188,7 @@
     "url": "https://moonsj.me/",
     "coverImage": {
       "main": "./images/Lay/lay-cover-3.png",
-      "desktop": null,
+      "desktop": "./images/Lay/lay-cover-3.png",
       "mobile": "./images/Lay/lay-cover-2.jpg"
     },
     "logoImage": null,
@@ -229,7 +229,7 @@
       },
       "performance": {
         "desktop": "./images/Lay/lay-cover-3.png",
-        "mobile": "./images/Lay/lay-cover-2.jpg"
+        "mobile": "./images/Lay/lay-cover-1.jpg"
       }
     }
   }

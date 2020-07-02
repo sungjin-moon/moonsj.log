@@ -7,6 +7,7 @@ function ContactPage() {
     <Layout currentPath="contact">
       <Headline>
         <h1>Contact</h1>
+        <h3>페이지 준비중입니다.</h3>
       </Headline>
     </Layout>
   )

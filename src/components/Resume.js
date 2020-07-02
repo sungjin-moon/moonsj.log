@@ -5,17 +5,14 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Tag from "../components/Tag"
+import Profile from "../images/profile1.jpg"
 
 function Resume() {
   return (
     <View className="resume">
       <div className="resume-name">SUNGJIN MOON</div>
       <Head className="resume-head">
-        <img
-          className="head-profile"
-          src="https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg"
-          alt=""
-        />
+        <img className="head-profile" src={Profile} alt="" />
         <div className="head-title">
           <span>Frontend Developer</span>
         </div>
@@ -199,6 +196,7 @@ const Head = styled.div`
     border: solid 10px;
     width: 200px;
     height: 200px;
+    object-fit: cover;
     border-radius: 50%;
     color: #8d9aad;
     background-color: #ffffff;
