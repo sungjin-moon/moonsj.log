@@ -1,6 +1,7 @@
 import React from "react"
 // import PropTypes from "prop-types"
 import styled from "styled-components"
+import SEO from "../components/seo"
 import Layout from "../components/Layout"
 import Headline from "../components/Headline"
 import DownloadBtn from "../components/DownloadBtn"
@@ -9,6 +10,7 @@ import Resume from "../components/Resume"
 function ResumePage() {
   return (
     <Layout currentPath="resume">
+      <SEO title="Resume" />
       <View className="resumePage">
         <Headline>
           <h1>Resume</h1>

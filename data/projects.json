@@ -56,8 +56,8 @@
         "image": "./images/Budy/budy-architecture.png"
       },
       "performance": {
-        "desktop": "./images/Budy/budy-cover-desktop.png",
-        "mobile": "./images/Budy/budy-cover-mobile.png"
+        "desktopUrl": "https://drive.google.com/file/d/1z8w6YQ2T9MAUd6RPZ8JToXupZB-WADKv/view?usp=sharing",
+        "mobileUrl": "https://drive.google.com/file/d/1L3GyvkX43UE8bpx885I-hNpZ-Rgbn7dK/view?usp=sharing"
       }
     }
   },
@@ -84,12 +84,7 @@
     },
     "detail": {
       "technologiesUsed": {
-        "frontend": [
-          "Next.js/React.js",
-          "AWS (EC2)",
-          "HTML5/CSS3",
-          "Jenkins"
-        ],
+        "frontend": ["Next.js/React.js", "AWS (EC2)", "HTML5/CSS3", "Jenkins"],
         "backend": [
           "Express.js/Sequelize.js",
           "AWS (EC2, Lambda, Cloud Watch)",
@@ -117,8 +112,8 @@
         "image": "./images/CheckCheck/CheckCheck-architecture.png"
       },
       "performance": {
-        "desktop": "./images/CheckCheck/CheckCheck-cover-desktop.png",
-        "mobile": "./images/CheckCheck/CheckCheck-cover-mobile.png"
+        "desktopUrl": "https://drive.google.com/file/d/1o-53oXije0gDfPFGxFVhUdlUlocmGR48/view?usp=sharing",
+        "mobileUrl": "https://drive.google.com/file/d/1b-8wSgMmxtFPdvLfg9BVN8C7eLA9bQne/view?usp=sharing"
       }
     }
   },
@@ -145,12 +140,7 @@
     },
     "detail": {
       "technologiesUsed": {
-        "frontend": [
-          "React.js",
-          "AWS (S3)",
-          "HTML5/CSS3",
-          "Websocket"
-        ],
+        "frontend": ["React.js", "AWS (S3)", "HTML5/CSS3", "Websocket"],
         "backend": [
           "Express.js/Sequelize.js",
           "AWS (EC2)",
@@ -176,8 +166,8 @@
         "image": "./images/ChatterBox/chatterbox-architecture.png"
       },
       "performance": {
-        "desktop": "./images/ChatterBox/chatterbox-cover-desktop.png",
-        "mobile": "./images/ChatterBox/chatterbox-cover-desktop.png"
+        "desktopUrl": "https://drive.google.com/file/d/1z8w6YQ2T9MAUd6RPZ8JToXupZB-WADKv/view?usp=sharing",
+        "mobileUrl": "https://drive.google.com/file/d/1L3GyvkX43UE8bpx885I-hNpZ-Rgbn7dK/view?usp=sharing"
       }
     }
   },
@@ -188,7 +178,7 @@
     "url": "https://moonsj.me/",
     "coverImage": {
       "main": "./images/Lay/lay-cover-3.png",
-      "desktop": null,
+      "desktop": "./images/Lay/lay-cover-3.png",
       "mobile": "./images/Lay/lay-cover-2.jpg"
     },
     "logoImage": null,
@@ -204,10 +194,7 @@
     },
     "detail": {
       "technologiesUsed": {
-        "frontend": [
-          "React Native",
-          "Expo"
-        ],
+        "frontend": ["React Native", "Expo"],
         "backend": [],
         "others": [
           "Javascript/Node.js",
@@ -228,8 +215,8 @@
         "image": "./images/ChatterBox/chatterbox-architecture.png"
       },
       "performance": {
-        "desktop": "./images/Lay/lay-cover-3.png",
-        "mobile": "./images/Lay/lay-cover-2.jpg"
+        "desktopUrl": "https://drive.google.com/file/d/1z8w6YQ2T9MAUd6RPZ8JToXupZB-WADKv/view?usp=sharing",
+        "mobileUrl": "https://drive.google.com/file/d/1L3GyvkX43UE8bpx885I-hNpZ-Rgbn7dK/view?usp=sharing"
       }
     }
   }
