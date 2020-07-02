@@ -2,6 +2,7 @@ import React from "react"
 // import PropTypes from 'prop-types'
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
 import Layout from "../components/Layout"
 import Headline from "../components/Headline"
 import ProjectCard from "../components/ProjectCard"
@@ -36,6 +37,7 @@ function ProjectsPage() {
   console.log(projects)
   return (
     <Layout currentPath="projects">
+      <SEO title="Projects" />
       <View>
         <Headline>
           <h1>Projects</h1>

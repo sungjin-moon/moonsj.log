@@ -2,6 +2,7 @@ import React from "react"
 // import PropTypes from 'prop-types'
 import styled from "styled-components"
 import { graphql } from "gatsby"
+import SEO from "../components/seo"
 import Layout from "../components/Layout"
 import Headline from "../components/Headline"
 import SkillBox from "../components/SkillBox"
@@ -22,6 +23,13 @@ export const query = graphql`
         text
       }
       coverImage {
+        main {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         desktop {
           childImageSharp {
             fluid {
@@ -50,6 +58,7 @@ export const query = graphql`
           backend
           others
         }
+        achievements
         architecture {
           image {
             childImageSharp {
@@ -59,22 +68,9 @@ export const query = graphql`
             }
           }
         }
-        achievements
         performance {
-          desktop {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          mobile {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          desktopUrl
+          mobileUrl
         }
       }
     }
@@ -92,17 +88,18 @@ function project({ data }) {
     developPeriod,
     description,
     company,
+    coverImage: { main, desktop, mobile },
     detail: {
       technologiesUsed: { backend, frontend, others },
       achievements,
       architecture,
-      performance,
+      performance: { desktopUrl, mobileUrl },
     },
   } = project
 
-  const coverImage = project.coverImage.desktop
-    ? project.coverImage.desktop.childImageSharp.fluid.src
-    : ""
+  const mainCoverImage = main ? main.childImageSharp.fluid.src : ""
+  const desktopCoverImage = desktop ? desktop.childImageSharp.fluid.src : ""
+  const mobileCoverImage = mobile ? mobile.childImageSharp.fluid.src : ""
 
   const logoImage = project.logoImage
     ? project.logoImage.childImageSharp.fluid.src
@@ -110,11 +107,9 @@ function project({ data }) {
 
   const architectureImage = architecture.image.childImageSharp.fluid.src
 
-  const performanceDesktopImg = performance.desktop.childImageSharp.fluid.src
-  const performanceMobileImg = performance.mobile.childImageSharp.fluid.src
-
   return (
     <Layout currentPath="projects">
+      <SEO title="Projects" />
       <View type={type} title={title}>
         <Headline>
           <div className="headline-left">
@@ -124,7 +119,7 @@ function project({ data }) {
             <h3>{projectType}</h3>
             <h3>{developPeriod}</h3>
           </div>
-          {title === "Lay" ? null : (
+          {title !== "Lay" && (
             <div className="headline-right">
               <div className="headline-right-logo">
                 <img src={logoImage} alt="" />
@@ -138,9 +133,13 @@ function project({ data }) {
             <div className="section-1-container-info">
               <h3>{description.title}</h3>
               <p>{description.text}</p>
-              <Button>View Live Site</Button>
+              {title === "Budy" && (
+                <Button href="https://thebudy.com" target="_sub">
+                  View Live Site
+                </Button>
+              )}
             </div>
-            <img src={coverImage} alt="" />
+            <img src={mainCoverImage} alt="" />
           </div>
         </section>
         <section className="section-2">
@@ -180,9 +179,9 @@ function project({ data }) {
             <h2>Performance</h2>
             <div className="section-5-container-performance">
               {type === "Web app Development" && (
-                <Desktop innerImg={performanceDesktopImg} />
+                <Desktop innerImg={desktopCoverImage} url={desktopUrl}/>
               )}
-              <Mobile innerImg={performanceMobileImg} />
+              <Mobile innerImg={mobileCoverImage} url={mobileUrl} />
             </div>
           </div>
         </section>
@@ -240,6 +239,7 @@ const View = styled.div`
         }
       }
       img {
+        min-width: 500px;
         max-width: 500px;
         height: 300px;
         border: solid 1px;
@@ -295,6 +295,8 @@ const Button = styled.a`
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 4px;
+  outline: none;
+  text-decoration: none;
 `
 
 export default project
