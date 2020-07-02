@@ -2,6 +2,7 @@ import React from "react"
 // import PropTypes from 'prop-types'
 import styled from "styled-components"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
 import Layout from "../components/Layout"
 import Headline from "../components/Headline"
 import Profile from "../images/profile1.jpg"
@@ -36,17 +37,20 @@ function IndexPage() {
   console.log(projects)
   return (
     <Layout currentPath="home">
+      <SEO title="Home" />
       <View>
         <Headline>
           <img className="home-profile" src={Profile} alt="" />
           <div className="home-description">
-            <p>Hello, my name is</p>
+            <h2>Frontend Developer</h2>
             <h1>SungJin Moon</h1>
-            <p className="home-description-text">
-              I'm a full-stack developer specialised in frontend and backend
-              development for complex scalable web apps. I write about web
-              development on my blog and regularly speak at various web
-              conferences and meetups.
+            <p>
+              여행을 좋아하고 개발을 좋아하는 주니어 개발자 문성진입니다.
+              대학교를 졸업하고, 코드스테이츠 부트캠프를 통해서 개발을 시작하게
+              되었습니다. 목표를 향해 항상 배움의 자세로 새로운 것에 도전하고
+              있으며, 부족한 부분을 개선하기 위해 계속 노력하고 있습니다. 좋은
+              인연이 되어서 함께 할 수 있는 기회가 되었으면 좋겠습니다.
+              방문해주셔서 감사합니다.
             </p>
             <div>
               <Link className="home-description-aboutMeBtn" to="/resume">
@@ -102,17 +106,15 @@ const View = styled.main`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h3 {
-        font-weight: 400;
+      h2 {
+        font-weight: 500;
       }
       h1 {
         font-size: 40px;
       }
       p {
-        font-size: 20px;
-      }
-      .home-description-text {
         margin: 10px 0px 20px 0px;
+        line-height: 1.8;
       }
       .home-description-aboutMeBtn {
         display: inline-block;

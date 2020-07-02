@@ -1,8 +1,13 @@
 import React from "react"
 // import PropTypes from 'prop-types'
 import styled from "styled-components"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faBuilding } from "@fortawesome/free-regular-svg-icons"
+import {
+  faGithubAlt,
+  faLinkedinIn,
+  faMediumM,
+} from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Tag from "../components/Tag"
 import Profile from "../images/profile1.jpg"
@@ -17,22 +22,46 @@ function Resume() {
           <span>Frontend Developer</span>
         </div>
         <div className="head-wrapper">
-          <a className="head-url" href="https://www.google.com" target="_sub">
-            <FontAwesomeIcon icon={faEnvelope} size="1x" color="#434E5E" />
-            <span>msj9121@gmail.com</span>
-          </a>
-        </div>
-        <div className="head-wrapper">
-          <a className="head-url" href="https://www.google.com" target="_sub">
-            <FontAwesomeIcon icon={faGithubAlt} size="1x" color="#434E5E" />
-            <span>github.com/moonsj</span>
-          </a>
-        </div>
-        <div className="head-wrapper">
-          <a className="head-url" href="https://www.google.com" target="_sub">
-            <FontAwesomeIcon icon={faLinkedinIn} size="1x" color="#434E5E" />
-            <span>linkedin.com/in/moonsj</span>
-          </a>
+          <div className="head-wrapper-left">
+            <div className="head-info">
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <span>Siheung</span>
+            </div>
+            <div className="head-info">
+              <FontAwesomeIcon icon={faBuilding} />
+              <span>I'm in between jobs.</span>
+            </div>
+            <div className="head-info">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span>msj9121@gmail.com</span>
+            </div>
+          </div>
+          <div className="head-wrapper-right">
+            <a
+              className="head-url"
+              href="https://github.com/sungjin-moon"
+              target="_sub"
+            >
+              <FontAwesomeIcon icon={faGithubAlt} size="1x" color="#434E5E" />
+              <span>github.com/sungjin-moon</span>
+            </a>
+            <a
+              className="head-url"
+              href="https://www.linkedin.com/in/sungjin-moon-32018217b/"
+              target="_sub"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} size="1x" color="#434E5E" />
+              <span>linkedin.com/in/sungjin-moon-32018217b</span>
+            </a>
+            <a
+              className="head-url"
+              href="https://medium.com/@msj9121"
+              target="_sub"
+            >
+              <FontAwesomeIcon icon={faMediumM} size="1x" color="#434E5E" />
+              <span>medium.com/@msj9121</span>
+            </a>
+          </div>
         </div>
       </Head>
       <Body className="resume-body">
@@ -73,8 +102,8 @@ function Resume() {
             <div className="content-list">
               <div className="content-list-name">Experienced</div>
               <div className="content-list-text">
-                Node.js, Express, Sequelize, MySQL, Graphql, React Native,
-                AWS(EC2, S3, Route53, Cloud Front), Firebase(Cloud Firestore)
+                Node.js, Express.js, Sequelize.js, MySQL, Graphql, React Native,
+                AWS (EC2, S3, Route53, Cloud Front, ACM)
               </div>
             </div>
 
@@ -90,13 +119,19 @@ function Resume() {
         <section>
           <h2>EDUCATION</h2>
           <div className="content">
-            <div>
-              <span className="content-name">Code State | </span>
-              <span>Advanced Software Engineering Immersive 9th</span>
+            <div className="content-wrapper">
+              <div>
+                <span className="content-name">Code State | </span>
+                Advanced Software Engineering Immersive 9th
+              </div>
+              <span className="content-date">2018.10 - 2019.01</span>
             </div>
-            <div>
-              <span className="content-name">Korea Tourism College | </span>
-              <span>AA, Tourism Management</span>
+            <div className="content-wrapper">
+              <div>
+                <span className="content-name">Korea Tourism College | </span>
+                <span>AA, Tourism Management</span>
+              </div>
+              <span className="content-date">2013.03 - 2018.02</span>
             </div>
           </div>
         </section>
@@ -208,6 +243,21 @@ const Head = styled.div`
   }
   .head-wrapper {
     display: flex;
+    .head-wrapper-left {
+      margin-right: 80px;
+    }
+  }
+  .head-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    svg {
+      font-size: 20px;
+      display: block;
+      margin-right: 10px;
+      margin-top: 4px;
+    }
   }
   .head-url {
     display: flex;
@@ -262,6 +312,10 @@ const Body = styled.div`
       }
       .content-name {
         font-weight: 800;
+      }
+      .content-wrapper {
+        display: flex;
+        justify-content: space-between;
       }
     }
     article {

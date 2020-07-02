@@ -5,7 +5,7 @@ import styled from "styled-components"
 function Footer() {
   return (
     <View>
-      <Copyright>Copyright @ 2020 Portfolio.</Copyright>
+      <Copyright>Copyright @ 2020 moonsj Powered by <a href="https://www.gatsbyjs.org/">Gatsby</a></Copyright>
     </View>
   )
 }
@@ -26,6 +26,9 @@ const View = styled.footer`
 
 const Copyright = styled.small`
   color: #ffffff;
+  a {
+    color: #41a4f5;
+  }
 `
 
 export default Footer
