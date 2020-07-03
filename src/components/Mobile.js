@@ -12,9 +12,11 @@ function Mobile({ innerImg, url }) {
       <div className="mobile-inner">
         <img src={innerImg} alt="" />
       </div>
-      <a href={url} target="_sub">
-        <FontAwesomeIcon icon={faPlay} size="3x" />
-      </a>
+      {url && (
+        <a href={url} target="_sub">
+          <FontAwesomeIcon icon={faPlay} size="3x" />
+        </a>
+      )}
     </View>
   )
 }
