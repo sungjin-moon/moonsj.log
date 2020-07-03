@@ -41,9 +41,6 @@ function ProjectsPage() {
       <View>
         <Headline>
           <h1>Projects</h1>
-          <p>
-            In-depth Case Studies to show you what I can offer and how I work
-          </p>
         </Headline>
         <div className="projectList">
           <section>

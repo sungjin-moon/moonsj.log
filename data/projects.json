@@ -26,7 +26,7 @@
           "React.js (Hooks + Context)",
           "AWS (S3, ACM, Cloud Front, Route53)",
           "Webpack/Babel",
-          "HTML5/CSS3/Styled Component",
+          "HTML5/CSS3/Styled Components",
           "Quill (WYSIWYG Editor)"
         ],
         "backend": [
@@ -45,12 +45,12 @@
         ]
       },
       "achievements": [
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
+        "Post와 Comment의 CRUD 관련 View를 전담하여 개발, Zeplin의 GUI 가이드를 참조하여 Color 모듈화 작업.",
+        "Layout, Button, Input, tag 등의 컴포넌트 구조 설계 및 문서화를 통해 개발.",
+        "글 작성 부분을 개발하기 위해서 Quill 라이브러리를 통해 텍스트 에디터를 커스터마이징.",
+        "S3 버킷을 생성하여 React의 빌드된 파일들을 업로드, Cloud Front(CDN)로 배포 설정을 생성",
+        "Cloud Front 배포 설정에서 ACM을 통해 만든 SSL 인증서를 등록, Route53 레코드에 추가하여 HTTPS 배포.",
+        "AWS CLI를 사용하여 S3 버킷에 파일 동기화, CloudFront 엣지 캐시에서 객체 무효화 작업을 통해 배포 자동화."
       ],
       "architecture": {
         "image": "./images/Budy/budy-architecture.png"
@@ -79,8 +79,8 @@
     "company": "Code States",
     "skills": ["Next.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
-      "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
-      "text": "현재 카나비스는 북미를 비롯해서 몇몇 유럽 국가들의 합법화가 빠르게 진행중입니다. 이렇게 활발해진 카나비스 시장에서 단순 기호용 뿐만 아니라 화장품, 식품, 의료, 제약, 반려동물 등 수많은 산업들과 정보들이 증가하게 되었습니다. 이에 따라, 버디는 사용자들이 올바르고 유용한 정보들을 쉽게 습득할 수 있도록 서로의 정보를 공유할 수 있는 커뮤니티 서비스를 개발하게 되었고, 프론트엔드 개발자로 참여하게 되었습니다."
+      "title": "카테고리 별 도서 추천 및 각 도서 별 사용자 본인의 로그를 남기는 서비스",
+      "text": "현재 독서모임 기반 커뮤니티 서비스를 제공하고 있는 트레바리와 협업하여 진행하게 된 프로젝트입니다. 트레바리 회원들의 서비스 이용을 더욱 더 활성화 시키기 위해 책에 대해 평가하고, 자신의 취향과 가치관을 서로 공유할 수 있도록 하고자 개발하게 되었습니다. 코드스테이츠 동기생들과 함께 개발하였고, 프론트엔드 개발자로 참여하게 되었습니다."
     },
     "detail": {
       "technologiesUsed": {
@@ -101,12 +101,12 @@
         ]
       },
       "achievements": [
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
+        "홈, 추천 도서, 검색 페이지 전담하여 개발, Adobe XD를 사용하여 와이어프레임 설계.",
+        "Next.js를 통해서 페이지 라우팅 경로 설정.",
+        "CSS3의 flex와 media queries를 활용하여 SPA 반응형 웹 구축.",
+        "Pagination을 통해 infinity scroll 구현.",
+        "초기렌더링은 Next.js의 SSR로 추가렌더링은 React.js의 CSR로 하여 첫 페이지 로딩 속도와 이동속도를 개선.",
+        "AWS의 EC2를 사용하여 클라이언트 서버를 배포하여 API 서버와 통신."
       ],
       "architecture": {
         "image": "./images/CheckCheck/CheckCheck-architecture.png"
@@ -131,12 +131,12 @@
     "type": "Web app Development",
     "position": "Frontend, Backend Developer",
     "projectType": "Personal Project",
-    "developPeriod": "2018.12 - 2019.01",
+    "developPeriod": "2019.02 - 2019.02",
     "company": "Code States",
     "skills": ["React.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
-      "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
-      "text": "현재 카나비스는 북미를 비롯해서 몇몇 유럽 국가들의 합법화가 빠르게 진행중입니다. 이렇게 활발해진 카나비스 시장에서 단순 기호용 뿐만 아니라 화장품, 식품, 의료, 제약, 반려동물 등 수많은 산업들과 정보들이 증가하게 되었습니다. 이에 따라, 버디는 사용자들이 올바르고 유용한 정보들을 쉽게 습득할 수 있도록 서로의 정보를 공유할 수 있는 커뮤니티 서비스를 개발하게 되었고, 프론트엔드 개발자로 참여하게 되었습니다."
+      "title": "각 방마다 사용자들이 대화할 수 있는 간단한 웹 채팅 플랫폼",
+      "text": "코드스테이츠에서 프로젝트 개발을 하면서 백엔드에 대한 이해가 부족하다고 느껴 개발하게 되었습니다. 와이어프레임 제작부터 컴포넌트 구조 설계, REST API 구조 설계, 데이터베이스 구조 설계까지 모든 것을 처음부터 끝까지 경험 할 수 있었고, 개발에 대한 전체적인 이해를 할 수 있도록 많은 도움이 됐었던 프로젝트입니다."
     },
     "detail": {
       "technologiesUsed": {
@@ -155,19 +155,19 @@
         ]
       },
       "achievements": [
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
+        "Adobe XD를 사용하여 와이어프레임 설계 및 컴포넌트 구조 설계 및 개발.",
+        "React-router를 통해서 페이지 라우팅 경로 설정.",
+        "Express generator를 사용하여 API 서버 구축.",
+        "Sequelize(ORM)을 사용하여 Express와 MySQL 서버를 연결.",
+        "WebSocket으로 클라이언트와 서버를 연결하여 실시간 채팅기능 구현.",
+        "가상 API서버 구축(EC2) 및 클라이언트 배포(S3)."
       ],
       "architecture": {
         "image": "./images/ChatterBox/chatterbox-architecture.png"
       },
       "performance": {
-        "desktopUrl": "https://drive.google.com/file/d/1z8w6YQ2T9MAUd6RPZ8JToXupZB-WADKv/view?usp=sharing",
-        "mobileUrl": "https://drive.google.com/file/d/1L3GyvkX43UE8bpx885I-hNpZ-Rgbn7dK/view?usp=sharing"
+        "desktopUrl": null,
+        "mobileUrl": null
       }
     }
   },
@@ -185,12 +185,12 @@
     "type": "Mobile app Development",
     "position": "Frontend Developer",
     "projectType": "Personal Project",
-    "developPeriod": "2019.03.14 - 2020.03.21",
+    "developPeriod": "2020.03.14 - 2020.03.21",
     "company": "",
     "skills": ["React Native", "Expo"],
     "description": {
-      "title": "Cannabis Community Service (카나비스 정보 공유 서비스)",
-      "text": "현재 카나비스는 북미를 비롯해서 몇몇 유럽 국가들의 합법화가 빠르게 진행중입니다. 이렇게 활발해진 카나비스 시장에서 단순 기호용 뿐만 아니라 화장품, 식품, 의료, 제약, 반려동물 등 수많은 산업들과 정보들이 증가하게 되었습니다. 이에 따라, 버디는 사용자들이 올바르고 유용한 정보들을 쉽게 습득할 수 있도록 서로의 정보를 공유할 수 있는 커뮤니티 서비스를 개발하게 되었고, 프론트엔드 개발자로 참여하게 되었습니다."
+      "title": "별자리 정보 제공 모바일 어플리케이션",
+      "text": "내가 만든 앱을 Google Play에 직접 배포해보고 싶은 마음과 React Native를 공부하고자 개발하게 된 간단한 앱 프로젝트입니다."
     },
     "detail": {
       "technologiesUsed": {
@@ -204,19 +204,17 @@
         ]
       },
       "achievements": [
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다.",
-        "AWS S3, Route53, ACM, Cloud front를 사용하여 HTTPS 정적 웹 사이트를 호스팅하였습니다. AWS CLI를 이용해 S3 배포를 자동화 하였습니다."
+        "Adobe XD를 사용하여 와이어프레임 설계 및 컴포넌트 구조 설계.",
+        " React Native를 통해 Splash 스크린 구현 및 컴포넌트 개발.",
+        "Carousel 컴포넌트를 직접 개발하여 UI 적용.",
+        "Expo 프레임워크를 통해 빌드 및 Google Play Store에 배포."
       ],
       "architecture": {
         "image": "./images/ChatterBox/chatterbox-architecture.png"
       },
       "performance": {
-        "desktopUrl": "https://drive.google.com/file/d/1z8w6YQ2T9MAUd6RPZ8JToXupZB-WADKv/view?usp=sharing",
-        "mobileUrl": "https://drive.google.com/file/d/1L3GyvkX43UE8bpx885I-hNpZ-Rgbn7dK/view?usp=sharing"
+        "desktopUrl": null,
+        "mobileUrl": null
       }
     }
   }
