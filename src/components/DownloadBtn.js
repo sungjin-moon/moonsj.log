@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function DownloadBtn() {
   return (
-    <View href="https://drive.google.com/file/d/140ujoLcsD4oFE-ffSuH5aPmoUTGBaI9c/view?usp=sharing" target="_sub">
+    <View href="https://drive.google.com/file/d/1OQ12YejxgfJUoWrYXxWr_Yi0U1ih0MAy/view?usp=sharing" target="_sub">
       <FontAwesomeIcon icon={faDownload} />
       <span>Download PDF Version</span>
     </View>
