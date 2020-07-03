@@ -8,6 +8,7 @@ import Headline from "../components/Headline"
 import SkillBox from "../components/SkillBox"
 import Desktop from "../components/Desktop"
 import Mobile from "../components/Mobile"
+import LaySplashImg from "../../data/images/Lay/lay-cover-1.jpg"
 
 export const query = graphql`
   query($title: String!) {
@@ -179,7 +180,10 @@ function project({ data }) {
             <h2>Performance</h2>
             <div className="section-5-container-performance">
               {type === "Web app Development" && (
-                <Desktop innerImg={desktopCoverImage} url={desktopUrl}/>
+                <Desktop innerImg={desktopCoverImage} url={desktopUrl} />
+              )}
+              {title === "Lay" && (
+                <Mobile innerImg={LaySplashImg} url={mobileUrl} />
               )}
               <Mobile innerImg={mobileCoverImage} url={mobileUrl} />
             </div>
@@ -259,6 +263,9 @@ const View = styled.div`
   .section-3 {
     background-color: #ffffff;
     .section-3-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .section-3-container-achievements {
         line-height: 2;
         margin: 0px;

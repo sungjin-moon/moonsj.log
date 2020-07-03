@@ -69,18 +69,18 @@ function Resume() {
           <h2>ABOUT ME</h2>
           <div className="content">
             <p>
-              Summarise your career here. You can make a PDF version of your
-              resume using our free Sketch template here. Aenean commodo ligula
-              eget dolor aenean massa. Cum sociis natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-              massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-              vulputate eget. Lorem ipsum dolor sit amet, consectetuer
-              adipiscing elit.
+              안녕하세요. 여행을 좋아하고 개발을 좋아하는 주니어 개발자
+              문성진입니다.
+              <br /> 메인 포지션은 웹 프론트엔드이고, 비전공자이지만
+              코드스테이츠라는 부트캠프를 통해서 자기주도적 학습을 경험했기
+              때문에 안 풀리는 문제가 생기면 쉽게 두려워하지 않는 것 같습니다.
+              항상 새로운 것에 대해 관심이 많고, 빠르게 변화하는 웹 트렌드를
+              따라가려고 노력하고 있습니다. 제가 개발 공부를 시작하게 된 계기는,
+              대학생활 시절 당시에 TV나 인터넷 등에서 다양한 플랫폼들이
+              소개되고, 여러 스타트업 기업들이 많아지면서 소프트웨어의 영향력이
+              커지고 있다는 것을 느끼게 되었습니다. 그래서 이때부터 개발자에
+              대한 관심이 많아지게 되었던 것 같습니다. 좋은 인연이 되어서 함께
+              성장 할 수 있는 기회가 되었으면 좋겠습니다. 감사합니다.
             </p>
           </div>
         </section>
@@ -103,7 +103,7 @@ function Resume() {
               <div className="content-list-name">Experienced</div>
               <div className="content-list-text">
                 Node.js, Express.js, Sequelize.js, MySQL, Graphql, React Native,
-                AWS (EC2, S3, Route53, Cloud Front, ACM)
+                Expo, AWS (EC2, S3, Route53, Cloud Front, ACM)
               </div>
             </div>
 
@@ -111,7 +111,7 @@ function Resume() {
               <div className="content-list-name">Tool</div>
               <div className="content-list-text">
                 Visual Studio Code, Postman, Slack, Git, GitHub, Bitbucket,
-                Trello, Zeplin
+                Trello, Zeplin, Swagger, AdobeXD
               </div>
             </div>
           </div>
@@ -149,39 +149,34 @@ function Resume() {
                   <div className="companyName">Gana Networks</div>
                 </header>
                 <p>
-                  Role description goes here ipsum dolor sit amet, consectetuer
-                  adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                  massa. Cum sociis natoque penatibus et magnis dis parturient
-                  montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                  nec, pellentesque eu, pretium quis, sem. Donec pede justo,
-                  fringilla vel.
+                  Budy 프로토타입을 개발하기 위해 스프린트 방식의 협업으로
+                  개발팀, UX/UI 디자이너와 정보구조 설계, 기획 업무를 함께
+                  참여하게 되었습니다. 백엔드팀과의 협업으로는 Swagger를 통해
+                  자동화된 API Documents를 보고 진행했고, 디자이너와의 협업은
+                  Zeplin의 GUI 가이드를 참조하여 커뮤니케이션을 진행하였습니다.
                 </p>
                 <h4>Achievements:</h4>
-                <p>
-                  Praesentium voluptatum deleniti atque corrupti quos dolores et
-                  quas molestias excepturi sint occaecati cupiditate non
-                  provident.
-                </p>
                 <ul>
                   <li>
-                    Lorem ipsum dolor sit amet, 80% consectetuer adipiscing
-                    elit.
+                    Post와 Comment의 CRUD 관련 View를 전담하여 개발, Zeplin의
+                    GUI 가이드를 참조하여 Color 모듈화 작업.
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet, 80% consectetuer adipiscing
-                    elit.
+                    Layout, Button, Input, tag 등의 컴포넌트 구조 설계 및
+                    문서화를 통해 개발.
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet, 80% consectetuer adipiscing
-                    elit.
+                    글 작성 부분을 개발하기 위해서 Quill 라이브러리를 통해
+                    텍스트 에디터를 커스터마이징.
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet, 80% consectetuer adipiscing
-                    elit.
+                    S3 버킷을 생성하여 React의 빌드된 파일들을 업로드, Cloud
+                    Front(CDN)로 배포 설정을 생성하여 ACM을 통해 만든 SSL
+                    인증서를 등록, Route53 레코드에 추가하여 HTTPS 배포.
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet, 80% consectetuer adipiscing
-                    elit.
+                    AWS CLI를 사용하여 S3 버킷에 파일 동기화, CloudFront 엣지
+                    캐시에서 객체 무효화 작업을 통해 배포 자동화.
                   </li>
                 </ul>
                 <h4>Technologies used:</h4>
@@ -363,6 +358,11 @@ const Body = styled.div`
         }
         .skills {
           padding: 4px 0px;
+        }
+        ul {
+          /* margin: 0px; */
+          margin-top: 0px;
+          padding-left: 30px;
         }
       }
     }
