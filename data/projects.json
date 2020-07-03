@@ -125,7 +125,7 @@
     "coverImage": {
       "main": "./images/ChatterBox/chatterbox-cover-desktop.png",
       "desktop": "./images/ChatterBox/chatterbox-cover-desktop.png",
-      "mobile": "./images/ChatterBox/chatterbox-cover-desktop.png"
+      "mobile": "./images/ChatterBox/chatterbox-cover-mobile.png"
     },
     "logoImage": "./images/codestates-logo.png",
     "type": "Web app Development",
