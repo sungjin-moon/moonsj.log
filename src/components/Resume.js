@@ -170,7 +170,7 @@ function Resume() {
                     텍스트 에디터를 커스터마이징.
                   </li>
                   <li>
-                    S3 버킷을 생성하여 React의 빌드된 파일들을 업로드, Cloud
+                    S3 버킷을 생성하여 React로 빌드된 파일들을 업로드, Cloud
                     Front(CDN)로 배포 설정을 생성하여 ACM을 통해 만든 SSL
                     인증서를 등록, Route53 레코드에 추가하여 HTTPS 배포.
                   </li>
