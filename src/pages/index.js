@@ -52,7 +52,7 @@ function IndexPage() {
               인연이 되어서 함께 할 수 있는 기회가 되었으면 좋겠습니다.
               방문해주셔서 감사합니다.
             </p>
-            <div>
+            <div className="home-description-wrapper">
               <Link className="home-description-aboutMeBtn" to="/resume">
                 About Me
               </Link>
@@ -116,6 +116,9 @@ const View = styled.main`
         margin: 10px 0px 20px 0px;
         line-height: 1.8;
       }
+      .home-description-wrapper {
+        display: flex;
+      }
       .home-description-aboutMeBtn {
         display: inline-block;
         background-color: rgba(0, 0, 0, 0.2);
@@ -125,6 +128,18 @@ const View = styled.main`
         text-decoration: none;
         padding: 0.6rem 1.5rem;
         border-radius: 4px;
+      }
+    }
+    @media (max-width: 774px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .home-profile {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+      .home-description-aboutMeBtn {
+        width: 100%;
       }
     }
   }
