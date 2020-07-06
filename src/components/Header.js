@@ -2,11 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 function Header({ currentPath }) {
   return (
     <View>
-      <Navigation currentPath={currentPath}>
+      <div className="nav-bars">
+        <FontAwesomeIcon icon={faBars} size="2x" />
+      </div>
+      <Navigation className="nav-list" currentPath={currentPath}>
         <Link className="nav-home" to="/">
           HOME
         </Link>
@@ -32,7 +37,7 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-  currentPath: PropTypes.string
+  currentPath: PropTypes.string,
 }
 
 const View = styled.header`
@@ -41,6 +46,25 @@ const View = styled.header`
   display: flex;
   justify-content: flex-end;
   padding: 0px 20px;
+  .nav-bars {
+    color: #ffffff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    svg {
+      cursor: pointer;
+    }
+  }
+  .nav-list {
+  }
+  @media (max-width: 774px) {
+    .nav-bars {
+      display: flex;
+    }
+    .nav-list {
+      display: none;
+    }
+  }
 `
 
 const Navigation = styled.nav`
