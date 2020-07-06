@@ -104,6 +104,10 @@ const View = styled.div`
       }
     }
   }
+  @media (max-width: 774px) {
+    width: 100%;
+    padding: 0px 20px;
+  }
 `
 
 export default ProjectCard
