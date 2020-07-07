@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
@@ -6,10 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 function Header({ currentPath }) {
+  const [isOpen, setOpen] = useState(false)
   return (
-    <View>
+    <View isOpen={isOpen}>
       <div className="nav-bars">
-        <FontAwesomeIcon icon={faBars} size="2x" />
+        <FontAwesomeIcon
+          icon={faBars}
+          size="2x"
+          onClick={() => setOpen(!isOpen)}
+        />
       </div>
       <Navigation className="nav-list" currentPath={currentPath}>
         <Link className="nav-home" to="/">
@@ -56,13 +61,29 @@ const View = styled.header`
     }
   }
   .nav-list {
+    a {
+      padding: 0px;
+    }
   }
   @media (max-width: 774px) {
+    flex-direction: column;
     .nav-bars {
       display: flex;
+      justify-content: flex-end;
+      padding: 12px 0px;
+      width: 100%;
     }
     .nav-list {
-      display: none;
+      display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+      flex-direction: column;
+      padding: 20px 0px;
+      a {
+        border-bottom: 0px;
+        margin: 0px 0px 20px 0px;
+        :last-child {
+          margin: 0px;
+        }
+      }
     }
   }
 `
