@@ -88,19 +88,19 @@ function Resume() {
           <h2>SKILLS & TOOLS</h2>
           <div className="content">
             <div className="content-list">
-              <div className="content-list-name">Strong</div>
+              <div className="content-list-name">Strong:</div>
               <div className="content-list-text">HTML5, CSS3, Javascript</div>
             </div>
 
             <div className="content-list">
-              <div className="content-list-name">Love</div>
+              <div className="content-list-name">Love:</div>
               <div className="content-list-text">
                 React.js, Next.js, Gatsby.js, Styled Components
               </div>
             </div>
 
             <div className="content-list">
-              <div className="content-list-name">Experienced</div>
+              <div className="content-list-name">Experienced:</div>
               <div className="content-list-text">
                 Node.js, Express.js, Sequelize.js, MySQL, Graphql, React Native,
                 Expo, AWS (EC2, S3, Route53, Cloud Front, ACM)
@@ -108,7 +108,7 @@ function Resume() {
             </div>
 
             <div className="content-list">
-              <div className="content-list-name">Tool</div>
+              <div className="content-list-name">Tool:</div>
               <div className="content-list-text">
                 Visual Studio Code, Postman, Slack, Git, GitHub, Bitbucket,
                 Trello, Zeplin, Swagger, AdobeXD
@@ -210,6 +210,9 @@ const View = styled.div`
     font-size: 34px;
     font-weight: 800;
     color: #434e5e;
+    @media (max-width: 774px) {
+      padding: 24px 20px;
+    }
   }
 `
 
@@ -219,6 +222,12 @@ const Head = styled.div`
   color: #ffffff;
   min-height: 180px;
   padding: 24px 40px;
+  @media (max-width: 774px) {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .head-profile {
     position: absolute;
     right: 56px;
@@ -230,16 +239,26 @@ const Head = styled.div`
     border-radius: 50%;
     color: #8d9aad;
     background-color: #ffffff;
+    @media (max-width: 774px) {
+      position: static;
+      display: inline-block;
+    }
   }
   .head-title {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 28px;
+    @media (max-width: 774px) {
+      margin-top: 28px;
+    }
   }
   .head-wrapper {
     display: flex;
     .head-wrapper-left {
       margin-right: 80px;
+    }
+    @media (max-width: 774px) {
+      flex-direction: column;
     }
   }
   .head-info {
@@ -280,6 +299,9 @@ const Head = styled.div`
 
 const Body = styled.div`
   padding: 40px;
+  @media (max-width: 774px) {
+    padding: 40px 20px;
+  }
   section {
     margin-bottom: 48px;
     h2 {
@@ -300,6 +322,7 @@ const Body = styled.div`
         margin-bottom: 8px;
         .content-list-name {
           font-weight: 800;
+          margin-right: 16px;
         }
         .content-list-text {
           width: 560px;
@@ -311,6 +334,10 @@ const Body = styled.div`
       .content-wrapper {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      .content-date {
+        margin-left: 20px;
       }
     }
     article {
@@ -357,10 +384,11 @@ const Body = styled.div`
           margin-bottom: 20px;
         }
         .skills {
+          display: flex;
+          flex-wrap: wrap;
           padding: 4px 0px;
         }
         ul {
-          /* margin: 0px; */
           margin-top: 0px;
           padding-left: 30px;
         }
