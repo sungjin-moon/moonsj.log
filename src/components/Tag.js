@@ -22,7 +22,8 @@ const View = styled.span`
   font-weight: 500;
   font-size: 12px;
   border-radius: 10px;
-    margin-right: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 `
 
 export default Tag

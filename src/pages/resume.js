@@ -31,7 +31,7 @@ const View = styled.main`
     position: absolute;
     top: -130px;
     left: 0px;
-    width: 100%;
+    width: -webkit-fill-available;
     z-index: 1;
     height: 240px;
     .headline-container {
@@ -39,6 +39,9 @@ const View = styled.main`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 774px) {
+        flex-wrap: wrap;
+      }
     }
   }
   article {
@@ -48,6 +51,9 @@ const View = styled.main`
     margin-bottom: 100px;
     .resume {
       margin: 0 auto;
+    }
+    @media (max-width: 774px) {
+      margin-bottom: 0px;
     }
   }
 `
