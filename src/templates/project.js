@@ -198,6 +198,10 @@ const View = styled.div`
   color: #434e5e;
   .headline-left {
     line-height: 2;
+    @media (max-width: 774px) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
   .headline-right {
     display: flex;
@@ -213,11 +217,22 @@ const View = styled.div`
         height: 70px;
         margin-right: 20px;
       }
+      @media (max-width: 774px) {
+        width: 100%;
+        justify-content: center;
+        img {
+          width: 50px;
+          height: 40px;
+        }
+      }
     }
   }
   .headline-container {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 774px) {
+      flex-direction: column;
+    }
   }
   .inner {
     margin: 0 auto;
