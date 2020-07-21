@@ -237,6 +237,7 @@ const View = styled.div`
   .inner {
     margin: 0 auto;
     max-width: 1140px;
+    padding: 0px 20px;
   }
   section {
     padding: 60px 0px;
@@ -256,12 +257,27 @@ const View = styled.div`
           margin: 20px 0px;
           line-height: 2;
         }
+        a {
+          display: inline-block;
+        }
+        @media (max-width: 774px) {
+          margin-right: 0px;
+          margin-top: 30px;
+        }
       }
       img {
-        min-width: 500px;
-        max-width: 500px;
+        width: 500px;
         height: 300px;
         border: solid 1px;
+      }
+
+      @media (max-width: 774px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        img {
+          width: 100%;
+          height: 200px;
+        }
       }
     }
   }
@@ -284,6 +300,9 @@ const View = styled.div`
       .section-3-container-achievements {
         line-height: 2;
         margin: 0px;
+        @media (max-width: 774px) {
+          padding-left: 20px;
+        }
       }
     }
   }
@@ -293,6 +312,11 @@ const View = styled.div`
         text-align: center;
         img {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+        @media (max-width: 774px) {
+          img {
+            display: none;
+          }
         }
       }
     }
@@ -305,6 +329,10 @@ const View = styled.div`
         display: flex;
         justify-content: ${({ type }) =>
           type === "Web app Development" ? "space-between" : "center"};
+
+        @media (max-width: 774px) {
+          flex-direction: column;
+        }
       }
     }
   }
