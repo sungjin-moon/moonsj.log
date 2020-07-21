@@ -51,17 +51,20 @@ function SkillBox({ type, skills }) {
 
 SkillBox.defaultProps = {
   type: "frontend",
-  skills: []
+  skills: [],
 }
 
 SkillBox.propTypes = {
   type: PropTypes.string,
-  skills: PropTypes.array
+  skills: PropTypes.array,
 }
 
 const View = styled.div`
   padding: 0px 15px;
   position: relative;
+  @media (max-width: 774px) {
+    margin-bottom: 60px;
+  }
   .skillBox-icon {
     position: absolute;
     left: 150px;

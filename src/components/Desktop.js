@@ -35,6 +35,11 @@ const View = styled.div`
   width: 500px;
   height: 400px;
   position: relative;
+
+  @media (max-width: 774px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
   .desktop-img {
     width: 100%;
     height: 100%;
