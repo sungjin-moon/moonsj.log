@@ -35,6 +35,9 @@ const View = styled.div`
   width: 500px;
   height: 400px;
   position: relative;
+  @media (max-width: 774px) {
+    width: 100%;
+  }
   .mobile-img {
     width: 100%;
     height: 100%;
