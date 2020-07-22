@@ -5,9 +5,9 @@ import MobileImg from "../images/mobile.png"
 import { faPlay } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function Mobile({ innerImg, url }) {
+function Mobile({ className, innerImg, url }) {
   return (
-    <View>
+    <View className={className}>
       <img className="mobile-img" src={MobileImg} alt="" />
       <div className="mobile-inner">
         <img src={innerImg} alt="" />
@@ -22,11 +22,13 @@ function Mobile({ innerImg, url }) {
 }
 
 Mobile.defaultProps = {
+  className: "",
   innerImg: "",
   url: "",
 }
 
 Mobile.propTypes = {
+  className: PropTypes.string,
   innerImg: PropTypes.string,
   url: PropTypes.string,
 }
