@@ -183,7 +183,7 @@ function project({ data }) {
                 <Desktop innerImg={desktopCoverImage} url={desktopUrl} />
               )}
               {title === "Lay" && (
-                <Mobile innerImg={LaySplashImg} url={mobileUrl} />
+                <Mobile innerImg={LaySplashImg} url={mobileUrl} className="mobile-1" />
               )}
               <Mobile innerImg={mobileCoverImage} url={mobileUrl} />
             </div>
@@ -315,7 +315,8 @@ const View = styled.div`
         }
         @media (max-width: 774px) {
           img {
-            display: none;
+            width: 100%;
+            height: 280px;
           }
         }
       }
@@ -332,6 +333,9 @@ const View = styled.div`
 
         @media (max-width: 774px) {
           flex-direction: column;
+          .mobile-1 {
+            margin-bottom: 40px;
+          }
         }
       }
     }

@@ -75,7 +75,7 @@
     "type": "Web app Development",
     "position": "Frontend Developer",
     "projectType": "Team Project",
-    "developPeriod": "2018-12 - 2019.01",
+    "developPeriod": "2018.12 - 2019.01",
     "company": "Code States",
     "skills": ["Next.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
@@ -131,7 +131,7 @@
     "type": "Web app Development",
     "position": "Frontend, Backend Developer",
     "projectType": "Personal Project",
-    "developPeriod": "2019.02 - 2019.02",
+    "developPeriod": "2019.02.05 - 2019.02.19",
     "company": "Code States",
     "skills": ["React.js", "Express.js", "MySQL", "Node.js", "Sequelize.js"],
     "description": {
@@ -189,7 +189,7 @@
     "company": "",
     "skills": ["React Native", "Expo"],
     "description": {
-      "title": "별자리 정보 제공 모바일 어플리케이션",
+      "title": "별자리 운세 모바일 어플리케이션",
       "text": "내가 만든 앱을 Google Play에 직접 배포해보고 싶은 마음과 React Native를 공부하고자 개발하게 된 간단한 앱 프로젝트입니다."
     },
     "detail": {
