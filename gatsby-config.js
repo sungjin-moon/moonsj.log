@@ -5,13 +5,14 @@ module.exports = {
     author: `SungJin Moon`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `project`,
-        path: `./data`,
+        path: `${__dirname}/data`,
       },
     },
     `gatsby-transformer-json`,
