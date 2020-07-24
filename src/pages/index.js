@@ -7,6 +7,7 @@ import Layout from "../components/Layout"
 import Headline from "../components/Headline"
 import Profile from "../images/profile1.jpg"
 import ProjectCard from "../components/ProjectCard"
+import PostCard from "../components/PostCard"
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -31,10 +32,23 @@ function IndexPage() {
           }
         }
       }
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date
+            }
+          }
+        }
+      }
     }
   `)
   const projects = data.allProjectsJson.edges
+  const posts = data.allMarkdownRemark.edges
   console.log(projects)
+  console.log(posts)
   return (
     <Layout currentPath="home">
       <SEO title="Home" />
@@ -62,7 +76,7 @@ function IndexPage() {
         <section>
           <div className="section-inner">
             <h1>Featured Projects</h1>
-            <div className="section-inner-projects">
+            <div className="listView">
               {projects.slice(0, 3).map((project, id) => {
                 const { title, type, skills, coverImage } = project.node
                 const image = coverImage.main.childImageSharp.fluid.src
@@ -77,12 +91,25 @@ function IndexPage() {
                 )
               })}
             </div>
-            <Link className="section-inner-viewAllprojects" to="/projects">
+            <Link className="button" to="/projects">
               View all projects
             </Link>
           </div>
         </section>
-        {/* <section>b</section> */}
+        <section>
+          <div className="section-inner">
+            <h1>Latest Blog Posts</h1>
+            <div className="listView">
+              {posts.slice(0, 4).map((post, id) => {
+                const { title } = post.node.frontmatter
+                return <PostCard key={id} title={title} />
+              })}
+            </div>
+            <Link className="button" to="/blog">
+              View all posts
+            </Link>
+          </div>
+        </section>
       </View>
     </Layout>
   )
@@ -152,22 +179,22 @@ const View = styled.main`
       h1 {
         font-size: 28px;
       }
-      .section-inner-projects {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 40px;
-      }
-      .section-inner-viewAllprojects {
-        display: inline-block;
-        padding: 0.375rem 1rem;
-        background-color: #41a4f5;
-        color: #ffffff;
-        outline: none;
-        text-decoration: none;
-        border-radius: 4px;
-        font-weight: 500;
-      }
     }
+  }
+  .listView {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.375rem 1rem;
+    background-color: #41a4f5;
+    color: #ffffff;
+    outline: none;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
   }
 `
 
